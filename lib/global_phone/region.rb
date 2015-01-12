@@ -10,7 +10,7 @@ module GlobalPhone
     field 2, :territory_record_data
     field 3, :international_prefix do |p| /^(?:#{p})/ end
     field 4, :national_prefix
-    field 5, :national_prefix_for_parsing do |p| /^(?:#{p})/ end
+    field 5, :national_prefix_for_parsing do |p| /^(?:#{p})$/ end
     field 6, :national_prefix_transform_rule
 
     def formats
